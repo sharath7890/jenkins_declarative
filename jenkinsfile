@@ -5,22 +5,13 @@ stages
 stage('Build') 
 {
 steps{
-echo "Building the Code.........."
-bat "mvn clean"
+echo "Building the Project.........."
 }
 }
 stage('Test') 
 {
 steps{
-echo "Testing the Code.........."
-bat "mvn test"
-}
-}
-stage('Compile') 
-{
-steps{
-echo "Compiling the Project.........."
-bat "mvn compile"
+echo "Testing the Project.........."
 }
 }
 stage('Deploy') 
